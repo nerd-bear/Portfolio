@@ -4,30 +4,34 @@
 
 html,
 body {
-  width: 100%;
-  overflow-x: hidden;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 html {
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 html::-webkit-scrollbar {
-  display: none;              /* chrome/safari/edge */
+    display: none;
+    /* chrome/safari/edge */
 }
 
 * {
-  scrollbar-width: none;      /* firefox */
+    scrollbar-width: none;
+    /* firefox */
 }
+
 *::-webkit-scrollbar {
-  display: none;              /* chrome/safari/edge */
+    display: none;
+    /* chrome/safari/edge */
 }
 
 @media (prefers-reduced-motion: reduce) {
-	* {
-		animation: none !important;
-		transition: none !important;
-		scroll-behavior: auto !important;
-	}
+    * {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
 }

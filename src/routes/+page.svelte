@@ -133,6 +133,43 @@
 	] as const;
 </script>
 
+<svelte:head>
+	<title>Iona Mitterfellner Dev</title>
+	<meta
+		name="description"
+		content="{getAge(
+			'2011-03-02'
+		)} year old software developer, systems programming, and website dev."
+	/>
+
+	<!-- canonical -->
+	<link rel="canonical" href="https://nerdbear.org/" />
+
+	<!-- open graph -->
+	<meta property="og:site_name" content="Iona Mitterfellner" />
+	<meta property="og:title" content="Iona Mitterfellner — Developer" />
+	<meta
+		property="og:description"
+		content="Developer portfolio: projects, experience, and contact. Building with SvelteKit, Python, C/C++, and more."
+	/>
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://nerdbear.org/" />
+	<meta property="og:image" content="https://nerdbear.org/og.png" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:alt" content="Iona Mitterfellner — Developer Portfolio preview" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Iona Mitterfellner — Developer" />
+	<meta
+		name="twitter:description"
+		content="Projects, experience, and contact — built with SvelteKit, Python, and low-level languages."
+	/>
+	<meta name="twitter:image" content="https://nerdbear.org/og.png" />
+	<meta name="twitter:image:alt" content="Iona Mitterfellner — Developer Portfolio preview" />
+	<meta name="theme-color" content="#09090b" />
+</svelte:head>
+
 <div class="min-h-screen bg-zinc-950 px-4 py-6 sm:p-6">
 	<div class="mx-auto flex max-w-5xl flex-col items-center gap-10">
 		<CodeWindow
