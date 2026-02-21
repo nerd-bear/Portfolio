@@ -30,11 +30,11 @@
 					/></svg
 				>
 			</span>
-			<span class="text-lg font-medium tracking-tight whitespace-nowrap sm:text-xl lg:text-2xl"
+			<span class="text-lg font-medium whitespace-nowrap sm:text-xl lg:text-2xl justify-center items-center flex mx-auto"
 				>{title}</span
 			>
 
-			<div class="group relative">
+			<!-- <div class="group relative">
 				<span
 					class="inline-flex cursor-default items-center gap-2 rounded-full bg-black/35 px-3 py-1 text-xs font-medium text-zinc-300 ring-1 ring-white/10 backdrop-blur transition select-none hover:bg-black/50"
 				>
@@ -57,7 +57,7 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 
 		<div class="w-21"></div>

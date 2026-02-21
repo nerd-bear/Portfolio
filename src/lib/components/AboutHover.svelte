@@ -26,9 +26,7 @@
 					I’ve spent years as a
 					<span class="font-semibold text-amber-300">Senior Training Officer</span>
 					in the
-					<span class="font-semibold text-fuchsia-300"
-						>Jugendfeuerwehr</span
-					>
+					<span class="font-semibold text-fuchsia-300">Jugendfeuerwehr</span>
 					(German national rescue & emergency service training).
 				</li>
 			</ul>
