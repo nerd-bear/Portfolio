@@ -23,3 +23,11 @@ html::-webkit-scrollbar {
 *::-webkit-scrollbar {
   display: none;              /* chrome/safari/edge */
 }
+
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation: none !important;
+		transition: none !important;
+		scroll-behavior: auto !important;
+	}
+}

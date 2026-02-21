@@ -51,7 +51,7 @@
 							have spent years as a
 							<span class="font-semibold text-amber-300">Senior Training Officer</span> in the
 							<span class="font-semibold text-fuchsia-300"
-								>Jugendfreiwilligeinclusiveberufsfeuerwehr</span
+								>Jugendfeuerwehr</span
 							>
 							(German national rescue &amp; emergency service training).
 						</p>
