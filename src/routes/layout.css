@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+html::-webkit-scrollbar {
+  display: none;              /* chrome/safari/edge */
+}
+
+* {
+  scrollbar-width: none;      /* firefox */
+}
+*::-webkit-scrollbar {
+  display: none;              /* chrome/safari/edge */
+}
