@@ -30,7 +30,8 @@
 					/></svg
 				>
 			</span>
-			<span class="text-lg font-medium whitespace-nowrap sm:text-xl lg:text-2xl justify-center items-center flex mx-auto"
+			<span
+				class="mx-auto flex items-center justify-center text-lg font-medium whitespace-nowrap sm:text-xl lg:text-2xl"
 				>{title}</span
 			>
 
@@ -64,28 +65,55 @@
 	</div>
 
 	<div class="px-6 pb-7">
-		<div class="rounded-2xl bg-zinc-950/60 px-5 py-6 ring-1 ring-white/10">
-			<pre
-				class="font-mono text-[15px] leading-[1.65] wrap-break-word whitespace-pre-wrap text-zinc-200 sm:text-[20px] lg:text-[28px]">
-<span class="text-zinc-500 select-none">1</span>  Hello there<span class="text-zinc-500">,</span
-				> My name is <span class="text-[18px] font-bold text-violet-400 sm:text-[22px] lg:text-4xl"
-					>{name}</span
+		<div class="hidden rounded-2xl bg-zinc-950/60 px-5 py-6 ring-1 ring-white/10 lg:block">
+			<div class="font-mono text-[28px] leading-[1.65] text-zinc-200">
+				<div class="grid grid-cols-[2ch_1fr] gap-x-4">
+					<span class="text-zinc-500 select-none">1</span>
+					<div>
+						Hello there<span class="text-zinc-500">,</span> My name is
+						<span class="text-4xl font-bold text-violet-400">{name}</span>
+					</div>
+
+					<span class="text-zinc-500 select-none">2</span>
+					<div></div>
+
+					<span class="text-zinc-500 select-none">3</span>
+					<div>
+						I am a <span class="text-4xl font-bold text-amber-300">{age}</span> year old software
+						developer<span class="text-zinc-500">,</span> with
+					</div>
+
+					<span class="text-zinc-500 select-none">4</span>
+					<div>
+						additional skills in
+						<span class="text-4xl font-bold text-fuchsia-400">{skills}</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="block rounded-2xl bg-zinc-950/60 px-5 py-6 ring-1 ring-white/10 lg:hidden">
+			<p
+				class="font-mono text-[15px] leading-[1.65] whitespace-pre-line text-zinc-200 sm:text-[20px] lg:text-[28px]"
+			>
+				Hello there<span class="text-zinc-500">,</span> My name is
+				<span class="text-[18px] font-bold text-violet-400 sm:text-[22px] lg:text-4xl">{name}</span
+				>. I am a
+				<span class="text-[18px] font-bold text-amber-300 sm:text-[22px] lg:text-4xl">{age}</span>
+				year old software developer<span class="text-zinc-500">,</span>
+				with additional skills in
+				<span class="text-[18px] font-bold text-fuchsia-400 sm:text-[22px] lg:text-4xl"
+					>{skills}</span
 				>
-<span class="text-zinc-500 select-none">2</span>
-<span class="text-zinc-500 select-none">3</span>  I am a <span
-					class="text-[18px] font-bold text-amber-300 sm:text-[22px] lg:text-4xl">{age}</span
-				> year old software developer<span class="text-zinc-500">,</span> with
-<span class="text-zinc-500 select-none">4</span>  additional skills in <span
-					class="text-[18px] font-bold text-fuchsia-400 sm:text-[22px] lg:text-4xl">{skills}</span
-				></pre>
+			</p>
 		</div>
 
 		<div class="mt-6 flex flex-wrap justify-end gap-4">
 			<a
 				href={mailto}
-				class="inline-flex items-center gap-3 rounded-full bg-black/40 px-4 py-2 text-base text-zinc-100 ring-1 ring-white/10 transition hover:bg-black/55 sm:px-6 sm:py-3 sm:text-xl lg:text-2xl"
+				class="inline-flex items-center gap-3 rounded-full bg-black/40 px-4 py-1 text-base text-white ring-1 ring-white/10 transition hover:bg-black/55 sm:px-6 sm:py-3 sm:text-xl lg:text-2xl"
 			>
-				<span class="inline-flex h-10 w-10 items-center justify-center rounded-full">
+				<span class="inline-flex h-6 w-6 items-center justify-center sm:h-7 sm:w-7 lg:h-8 lg:w-8">
 					<!-- <svg viewBox="0 0 24 24" class="h-5 w-5 sm:h-6 sm:w-6 lg:h-7 lg:w-7 fill-current">
 						<path
 							d="M2 6c0-1.1.9-2 2-2h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6zm2 0l8 5 8-5H4zm16 12V9l-8 5-8-5v9h16z"
@@ -107,9 +135,9 @@
 
 			<a
 				{href}
-				class="inline-flex items-center gap-3 rounded-full bg-black/40 px-6 py-3 text-2xl text-zinc-100 ring-1 ring-white/10 transition hover:bg-black/55"
+				class="inline-flex items-center gap-3 rounded-full bg-black/40 px-4 py-1 text-base text-white ring-1 ring-white/10 transition hover:bg-black/55 sm:px-6 sm:py-3 sm:text-xl lg:text-2xl"
 			>
-				<span class="inline-flex h-10 w-10 items-center justify-center rounded-full">
+				<span class="inline-flex h-6 w-6 items-center justify-center sm:h-7 sm:w-7 lg:h-8 lg:w-8">
 					<svg viewBox="0 0 24 24" class="h-5 w-5 fill-current sm:h-6 sm:w-6 lg:h-7 lg:w-7">
 						<path
 							d="M12 .5C5.73.5.75 5.6.75 12c0 5.13 3.29 9.48 7.86 11.02.58.11.79-.26.79-.57v-2.1c-3.2.71-3.87-1.57-3.87-1.57-.52-1.36-1.27-1.72-1.27-1.72-1.04-.73.08-.72.08-.72 1.15.08 1.76 1.22 1.76 1.22 1.02 1.78 2.68 1.27 3.33.97.1-.76.4-1.27.72-1.56-2.55-.3-5.24-1.31-5.24-5.82 0-1.29.45-2.35 1.2-3.18-.12-.3-.52-1.52.11-3.17 0 0 .97-.32 3.18 1.22.92-.26 1.9-.39 2.88-.39s1.96.13 2.88.39c2.2-1.54 3.18-1.22 3.18-1.22.63 1.65.23 2.87.11 3.17.74.83 1.2 1.89 1.2 3.18 0 4.52-2.7 5.52-5.27 5.81.41.37.78 1.1.78 2.22v3.29c0 .31.21.68.8.57C19.96 21.48 23.25 17.13 23.25 12 23.25 5.6 18.27.5 12 .5Z"

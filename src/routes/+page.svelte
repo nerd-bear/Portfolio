@@ -150,7 +150,9 @@
 	<meta property="og:title" content="Iona Mitterfellner — Developer" />
 	<meta
 		property="og:description"
-		content="{getAge('2011-03-02')} year old Programmer Portfolio. Developer portfolio: projects, experience, and contact. Building with SvelteKit, Python, C/C++, and more."
+		content="{getAge(
+			'2011-03-02'
+		)} year old Programmer Portfolio. Developer portfolio: projects, experience, and contact. Building with SvelteKit, Python, C/C++, and more."
 	/>
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://nerdbear.org/" />
@@ -163,7 +165,9 @@
 	<meta name="twitter:title" content="Iona Mitterfellner — Developer" />
 	<meta
 		name="twitter:description"
-		content="{getAge('2011-03-02')} year old Programmer Portfolio. Projects, experience, and contact — built with SvelteKit, Python, and low-level languages."
+		content="{getAge(
+			'2011-03-02'
+		)} year old Programmer Portfolio. Projects, experience, and contact — built with SvelteKit, Python, and low-level languages."
 	/>
 	<meta name="twitter:image" content="https://nerdbear.org/og.png" />
 	<meta name="twitter:image:alt" content="Iona Mitterfellner — Developer Portfolio preview" />
